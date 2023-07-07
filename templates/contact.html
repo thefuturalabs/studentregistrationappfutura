@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+       <div class="row align-items-stretch mb-5">
+       <div class="col-md-6">
+          <div class="form-group">
+            <input class="form-control" id="name" name="name"/>
+              <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="mail" name="email"/>
+              <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group mb-md-0">
+            <input class="form-control" id="phone" name="phone"/>
+              <p class="help-block text-danger"></p>
+          </div>
+       </div>
+       <div class="col-md-6">
+          <div class="form-group form-group-textarea mb-md-0">
+             <textarea class="form-control" name="content" id="content"></textarea>
+                <p class="help-block text-danger"></p>
+           </div>
+        </div>
+        </div>
+        <div class="text-center">
+           <div id="success"></div>
+               <button class="btn btn-primary btn-xl text-uppercase" type="submit">ddd</button>
+           </div>
+</form>
+</body>
+</html>
